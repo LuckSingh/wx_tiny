@@ -1,0 +1,21 @@
+<view class="padding-top-10 padding-left-28 padding-bottom-150 {{list.length==0?'dis':''}}">
+  <view bindtap="select" class="coupon_body" wx:for="{{list}}" data-id="{{item.voucherId}}"  data-index="{{index}}" data-title="{{item.title}}" data-amount="{{item.amount}}">
+    <image class="coupon_left" src="../../images/coupon_left.png" />
+    <view class="coupon_body_left">
+      <view class="coupon_sign">￥</view>
+      <view class="coupon_price">{{item.amount/100}}</view>
+    </view>
+    <view class="coupon_body_right">
+      <view class="coupon_name">{{item.title}}</view>
+      <view class="coupon_tips">有效期至:{{item.invalidDate}}</view>
+    </view>
+    <view class="coupon_select {{act==index?'inline_block':''}}">
+      <image class="coupon_select_pic" src="../../images/coupon_select.png" />
+    </view>
+    <image class="coupon_right" src="../../images/coupon_right.png" />
+  </view>
+</view>
+<view class="no-coupon {{list.length==0?'':'dis'}}">
+  无优惠券可使用
+</view>
+<view bindtap="goBack" class="back_button">不使用优惠券</view>

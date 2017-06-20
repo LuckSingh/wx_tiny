@@ -1,0 +1,73 @@
+<view class="body">
+<view class="cost_content">
+  <view class="cost_body">
+    <view class="cost_price">{{totalCnt}}</view>
+    <view class="cost_total">元</view>
+  </view>
+  
+  <view class="cost_button">
+    <view wx:if="{{(list.activityOrder==1||list.voucher!=undefined||list.isPrivilege==1)}}" class="cost_button_word">已优惠{{(activityPriceP+amount+privilegeDiscount)}}元</view>
+  </view>
+  <view class="cost_title">
+    <view class="cost_line"></view>
+    <view class="cost_introduce">费用详情</view>
+    <view class="cost_line"></view>
+  </view>
+  </view>
+<view class="contentbody">
+  <!--改价后-->
+  <view wx:if="{{list.manualModified == 1}}">
+    <view class="marginH">
+      <view class="cost_detail_title">改价处理后费用</view>
+      <view class="cost_detail_price">{{list.modifiedPrice/100}}元</view>
+    </view>
+  </view>
+  <view wx:else>
+    <view wx:if="{{list.activityOrder == 1}}">
+     <!-- 活动订单 -->
+      <view class="marginH">
+        <view class="cost_detail_title">标准时长计费</view>
+        <!--<view class="cost_detail_price">{{list.activityNormalPrice/100}}元</view>-->
+        <view class="cost_detail_price">{{activityNormalPrice}}元</view>
+        <view class="cost_detail_tips">{{timeStr}} * {{list.priceRules}}</view>
+      </view>
+      <view class="marginH">
+        <view class="cost_detail_title">活动时长计费</view>
+        <view class="cost_detail_price">{{activityPrice}}元</view>
+        <view class="cost_detail_tips">{{activityTime}} * {{list.activityPriceRules}}</view>
+      </view>
+    </view>
+    <view wx:else> 
+    <!-- 标准订单 -->
+    
+     <view class="marginH">
+        <view class="cost_detail_title">标准时长计费</view>
+        <view class="cost_detail_price">{{rawPrice}}元</view>
+        <view class="cost_detail_tips">{{timeStr}} ＊ {{list.priceRules}}</view>
+      </view>
+   </view>
+  </view>
+  <view class="marginH" wx:if="{{list.isPrivilege==1}}">
+  <!--<view class="cost_detail3" wx:if="{{list.privilegeOrder==1}}">-->
+    <view class="cost_detail_title">特权卡扣减</view>
+    <view class="cost_detail_price">-{{list.isPrivilege==1?(list.privilegeDiscount/100):0}}元</view>
+    <view class="cost_detail_tips">{{list.isPrivilege?list.privilegeCardName:''}}</view>
+ <!--</view>-->
+  </view>
+  </view>
+  <view class="cost_coupon">
+    <view class="cost_coupon_title">优惠券</view>
+    <view class="cost_coupon_detail" bindtap="coupon">{{list.voucher!=undefined ? (!list.voucherTitle ? list.voucher.title : list.voucherTitle) : '无可用优惠券'}}
+      <image class="cost_coupon_arrow" src="../../images/arrow.png" />
+    </view>
+  </view>
+  <view class="button_word">
+    <view bindtap="pay" class="pay">
+      <image class="alipay_logo" src="../../images/shape.png" />微信支付</view>
+  </view>
+  <view class="footer">
+    <view class="footer_text">
+      <view bindtap="service" class="service">联系人工客服</view>
+    </view>
+  </view>
+</view>

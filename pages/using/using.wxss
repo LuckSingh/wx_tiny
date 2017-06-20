@@ -1,0 +1,214 @@
+.mask {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 25px;
+    top: 25px;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00aacc;
+}
+
+
+
+.header{
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    background: #EEEEEE;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #999999;
+    letter-spacing: 0;
+}
+
+.header_number{
+    display: inline-block;
+}
+
+.header_code{
+    display: inline-block;
+    margin-left: 20rpx;
+}
+
+.time_pic {
+    margin-top: 126rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.time {
+    /*margin-top: 28rpx;*/
+    font-family: PingFangSC-Regular;
+    font-size: 90rpx;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.time_tips{
+    font-family: PingFangSC-Light;
+    font-size: 24rpx;
+    color: #888888;
+    letter-spacing: 0;
+}
+
+.time_line{
+    margin-left: 76rpx;
+    margin-top: 108rpx;
+    width: 600rpx;
+    border-top: 1rpx solid #E2E2E2;
+}
+
+.cost_pic {
+    margin-top: 96rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.cost {
+    font-family: PingFangSC-Regular;
+    font-size: 60rpx;
+    line-height: 70rpx;
+    color: #000000;
+    letter-spacing: 0;
+    margin-top: 22rpx;
+}
+
+.cost_tips{
+    margin-top: 12rpx;
+    font-family: PingFangSC-Light;
+    font-size: 24rpx;
+    color: #888888;
+    letter-spacing: 0;
+}
+
+.cost_button{
+    text-align: center;
+}
+
+.cost_button_word{
+    text-align: center;
+    width: 270rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    border: 1rpx solid #f4333c;
+    border-radius: 20rpx;
+    font-family: PingFangSC-Light;
+    font-size: 22rpx;
+    color: #F4333C;
+    letter-spacing: 0;
+    margin:26rpx auto;
+}
+
+.service {
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #0090FF;
+    letter-spacing: 0;
+}
+
+.unlock_body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    background: #000000;
+    z-index: 1;
+}
+
+.unlock_bac {
+    text-align: center;
+    top: 230rpx;
+    left: 82rpx;
+    position: absolute;
+    width: 586rpx;
+    height: 378rpx;
+    background: #FFFFFF;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+
+.unlock_del {
+    position: absolute;
+    left: 334rpx;
+    right: 0;
+    bottom: 472rpx;
+    width: 86rpx;
+    height: 86rpx;
+    z-index: 4;
+}
+
+.unlock_title {
+    margin-top: 60rpx;
+    line-height: 50rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 36rpx;
+    color: #000000;
+    letter-spacing: -0.12px;
+}
+
+.unlock_tips {
+    margin-top: 12rpx;
+    line-height: 36rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #888888;
+    letter-spacing: -0.08px;
+}
+
+.unlock{
+    text-align: left;
+    width: 512rpx;
+    height: 46rpx;
+    margin-left: 48rpx;
+}
+
+.unlock_border{
+    width: 108rpx;
+    height: 136rpx;
+    margin-top: 46rpx;
+    margin-right: 20rpx;
+}
+
+.unlock_nums{
+    line-height: 136rpx;
+    /*text-align: center;*/
+    margin-left: 36rpx;
+    width: 514rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 72rpx;
+    /*letter-spacing: 89rpx;*/
+    color: #0090FF;
+}
+
+.unlock_num1{
+    width: 128.5rpx;
+    display: inline-block;
+    text-align: center;
+}
+
+.finish_button {
+    position: absolute;
+    left: 76rpx;
+    right: 0;
+    bottom: 114rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #858989;
+    width: 600rpx;
+    height: 90rpx;
+}
+
+.finish {
+    border-radius: 10rpx;
+    color: #1992FC;
+    background-color: #FFFFFF;
+    border:2rpx solid #1992FC;
+}

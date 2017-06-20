@@ -1,0 +1,121 @@
+.complate {
+  text-align: center;
+}
+
+.complate_pic {
+  margin-top: 140rpx;
+}
+
+.complate_txt {
+  margin-top: 86rpx;
+  font-size: 36rpx;
+}
+
+.complate_btn {
+  width: 600rpx;
+  height: 100rpx;
+  text-align: center;
+  margin: 60rpx auto 0;
+  border: 2rpx solid #0090ff;
+  color: #0090ff;
+  line-height: 100rpx;
+  border-radius: 8rpx;
+}
+
+/*弹出层*/
+
+.layout {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.layout-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+}
+
+.layout-content {
+  width: 600rpx;
+  height: 512rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300rpx;
+  margin-top: -256rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.layout_pag_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.layout_pag_container {
+  color: #fff;
+}
+
+.bag_title {
+  font-size: 40rpx;
+  margin-top: 74rpx;
+  font-family: PingFangSC-Medium;
+}
+.bag_money_wrapper{
+  font-size: 48rpx;
+  width: 100%;
+}
+.bag_money{
+  font-family: PingFangSC-Regular;
+  display: inline-block;
+  font-size: 80rpx;
+}
+.integer{
+  font-size: 100rpx;
+}
+.bag_date{
+  font-size: 24rpx;
+  font-family: PingFangSC-Light;
+  opacity: 0.8;
+}
+.bag_complte_btn{
+  width: 360rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border:2rpx solid #ffffff;
+  margin: 60rpx auto 0;
+  border-radius: 6rpx;
+}
+.layout-close{
+  position: absolute;
+  left: 50%;
+  margin-left: -40rpx;
+  bottom:200rpx;
+  z-index: 100;
+  width: 80rpx;
+  height: 80rpx;
+  background-color:#000000;
+  border-radius: 50%;
+  border:2rpx solid #ffffff; 
+}
+.icon-close{
+  width: 100%;
+  height: 100%;
+}
+.redpag_pic image{
+  width: 640rpx;
+  height:480rpx;
+}

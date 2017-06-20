@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="body">
+  <image class="bac" src="../../images/bac.png"></image>
+  <view class="login_button" wx:if="{{isLogin == false}}">
+    <view bindtap="login" class="login">登录</view>
+    <view bindtap="makePhoneCall" class="intro">联系客服</view>
+  </view>
+  <view class="scan_button" wx:elif="{{isLogin == true}}">
+    <view class="scan" bindtap="goScanCode">
+      <image class="scan_pic" src="../../images/scan.png" />扫码解锁</view>
+    <view class="footer">
+      <view class="footer_text">
+        <view bindtap="makePhoneCall" class="contractus">联系客服</view>
+        <view class="footer_border"></view>
+        <view bindtap="my" class="my">我的押金</view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,178 @@
+.cost_body{
+    position: absolute;
+    width: 750rpx;
+    top: 100rpx;
+}
+
+.cost_price{
+    display: inline-block;
+    width: 442rpx;
+    text-align: right;
+    font-family: PingFangSC-Regular;
+    font-size: 96rpx;
+    color: #0090FF;
+    letter-spacing: 0;
+}
+
+.cost_total{
+    display: inline-block;
+    margin-left: 22rpx;
+    font-family: AppleSystemUIFont;
+    font-size: 28rpx;
+    color: #999999;
+    letter-spacing: 0;
+}
+
+.cost_title {
+    position: absolute;
+    width: 750rpx;
+    top: 310rpx;
+    text-align: center;
+}
+
+.cost_introduce{
+    display: inline-block;
+    margin: 0 40rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #9B9B9B;
+    letter-spacing: 0;
+}
+
+.cost_line {
+    display: inline-block;
+    height: 10rpx;
+    width: 204rpx;
+    border-top: 1rpx solid #BBBBBB;
+}
+
+.cost_detail_title {
+    width: 300rpx;
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.cost_detail_price{
+    width: 300rpx;
+    display: inline-block;
+    text-align: right;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 34rpx;
+}
+
+.cost_detail_tips {
+    margin-top: 4rpx;
+    line-height: 34rpx;
+    font-family: SFNSText;
+    font-size: 24rpx;
+    color: #999999;
+    letter-spacing: 0;
+}
+
+.cost_coupon{
+    position: absolute;
+    width: 600rpx;
+    top: 802rpx;
+    left: 76rpx;
+}
+
+.cost_coupon_title{
+    width: 300rpx;
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #000;
+    letter-spacing: 0;
+}
+
+.cost_coupon_detail {
+    display: inline-block;
+    width: 300rpx;
+    text-align: right;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #888888;
+    letter-spacing: 0;
+}
+
+.cost_coupon_arrow {
+    margin-left: 14rpx;
+    width: 10rpx;
+    height: 20rpx;
+}
+
+.button_word {
+    position: absolute;
+    left: 75rpx;
+    right: 0;
+    top: 980rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #858989;
+    width: 600rpx;
+    height: 90rpx;
+}
+
+.pay {
+    border-radius: 10rpx;
+    color: #fff;
+    background-color: #1aae18;
+}
+
+.alipay_logo {
+    vertical-align:middle;
+    width: 52rpx;
+    height: 52rpx;
+    margin-right: 16rpx;
+}
+
+.service{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #0090FF;
+    letter-spacing: 0;
+}
+
+.cost_button{
+    position: absolute;
+    width: 180rpx;
+    left: 285rpx;
+    top: 240rpx;
+    text-align: center;
+}
+
+.cost_button_word{
+    text-align: center;
+    width: 180rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    border: 1rpx solid #f4333c;
+    border-radius: 20rpx;
+    font-family: PingFangSC-Light;
+    font-size: 22rpx;
+    color: #F4333C;
+    letter-spacing: 0;
+}
+
+.cost_content{
+  height: 420rpx;
+}
+.contentbody{
+  width:600rpx;
+margin:0 auto;
+
+}
+.marginH{
+  margin: 30rpx 0;
+}

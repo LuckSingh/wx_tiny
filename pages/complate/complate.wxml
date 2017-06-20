@@ -1,0 +1,38 @@
+<!--完成-->
+<view class="complate">
+  <view class="complate_pic">
+    <icon type="success" size="93" />
+  </view>
+  <view class="complate_txt">
+    实名认证成功
+  </view>
+  <view bindtap="goUsingBike" class="complate_btn">
+    去用车
+  </view>
+</view>
+<view class="layout {{isCoupon?'':'dis'}}">
+  <view class="layout-wrapper"></view>
+  <view class="layout-content">
+    <view class="redpag_pic">
+      <image src="../../images/redpag.png"></image>
+    </view>
+    <view class="layout_pag_container">
+      <view class="bag_title">
+        {{voucher.title}}
+      </view>
+      <view class="bag_money_wrapper">￥
+      <view class="bag_money integer">{{yuan}}</view>
+      .
+      <view class="bag_money float">{{fen}}</view>
+      </view>
+      <view class="bag_date">
+        有效期至:{{voucher.invalidDate}}
+      </view>
+      <view bindtap="goUsingBike" class="bag_complte_btn">
+        去用车
+      </view>
+    </view>
+  </view>
+  <view bindtap="layoutClose" class="layout-close">
+  <image class="icon-close" src="../../images/icon_close.png"></image></view>
+</view>

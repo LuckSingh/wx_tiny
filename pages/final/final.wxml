@@ -1,0 +1,25 @@
+<view class="body">
+  <view class="final-pic">
+    <icon type="success" size="93" />
+  </view>
+  <view class="final">
+    <view class="final_title">行程共花费{{list.actualPrice/100}}元</view>
+  </view>
+  <view class="data">
+    <view class="kcal">
+      <image class="data_pic" src="../../images/kcal.png" />
+      <view class="data_num">{{calorie}}</view>
+      <view class="data_tips">消耗热量{{list.calorie<1000?"(cal)":"(kCal)"}}</view>
+    </view>
+    <view class="time">
+      <image class="data_pic" src="../../images/time.png" />
+      <view class="data_num">{{time}}</view>
+      <view class="data_tips">时长(min)</view>
+    </view>
+    <view class="carbon">
+      <image class="data_pic" src="../../images/carbon.png" />
+      <view class="data_num">{{list.carbon}}</view>
+      <view class="data_tips">减少碳排(g)</view>
+    </view>
+  </view>
+</view>

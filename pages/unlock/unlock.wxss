@@ -1,0 +1,16 @@
+.unlock-pic-wrapper{
+  text-align: center;
+  margin-top: 200rpx;
+}
+.unlock-pic{
+  width:318rpx;
+  height: 240rpx;
+}
+.unlock-progress{
+  text-align: center;
+  font-size: 32rpx;
+}
+.unlock-usetime{
+  display: inline-block;
+  margin: 0 20rpx;
+}

@@ -1,0 +1,10 @@
+<view class="unlock-wrapper">
+<view class="unlock-pic-wrapper">
+<image class="{{gifStatus=='1'?'':'dis'}} unlock-pic" src="../../images/unlock_01.gif" />
+<image class="{{gifStatus=='2'?'':'dis'}} unlock-pic" src="../../images/unlock_02.gif" />
+
+</view>
+<view class="unlock-progress">
+  解锁请求中...<view class="unlock-usetime">{{progress}}%</view>
+</view>
+</view>

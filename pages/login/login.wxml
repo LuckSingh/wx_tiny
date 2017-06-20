@@ -1,0 +1,24 @@
+<view class="login-container">
+  <view class="login_input_one">
+    <view class="phone-inp">
+      <input class="login_input" bindinput="phoneInput" type="number" placeholder="请输入手机号" maxlength="11" value="{{phoneNum}}" />
+    </view>
+    <view bindtap="del" class="del_pic">
+      <image class="del" src="../../images/phone_del.png" />
+    </view>
+  </view>
+  <view class="login_input_two">
+    <view class="vcode-inp">
+      <input bindinput="vcodeInput"  class="login_input" placeholder="请输入验证码" />
+    </view>
+    
+    <view class="vcode {{isCountdown?'color_bbb':'color_006FFF'}}" catchtap="vcode">{{vcode}}</view>
+    <view class="inline_block">
+      <view class="vcode_border"></view>
+    </view>
+  </view>
+  <view class="vcode_error {{vcode_error_dis?'dis':''}}">{{error_detail}}</view>
+  <view class="button_word">
+    <view bindtap="login" class="login {{login_dis?'':'login_pass'}}">登录</view>
+  </view>
+</view>

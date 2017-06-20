@@ -1,0 +1,110 @@
+/* pages/login/login.wxss */
+.login-container{
+    width:600rpx;
+    margin:200rpx auto;
+}
+
+.login_input_one{
+    border-bottom: 2rpx solid #DDDDDD;
+    height:132rpx;
+}
+
+.login_input_two{
+    height:132rpx;
+    border-bottom: 2rpx solid #DDDDDD;   
+    position: relative; 
+}
+.phone-inp,.vcode-inp{
+  height:100%;
+  float: left;
+  width:430rpx;
+
+}
+.vcode-inp{
+  width: 390rpx;
+  position: absolute;
+}
+
+.del_pic{
+    float: right;
+    height:100%;
+    width: 100rpx;
+    text-align: right;
+}
+.login_input{
+    margin-top: 40rpx;
+    display: inline-block;
+    border: 0 solid #fff;
+}
+
+.inline_block{
+  width:2rpx;
+  float: right;
+}
+
+.del{
+    width: 28rpx;
+    height: 28rpx;
+    margin-top: 50rpx;
+    margin-right: 20rpx;
+}
+
+.vcode_border{
+  width: 2rpx;
+  background: #DDDDDD;
+    height: 64rpx;
+    margin-top:38rpx;
+}
+
+.vcode{
+    float: right;
+    margin-top:54rpx;
+    text-align: center;
+    width: 200rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #006FFF;
+    letter-spacing: 0;
+}
+.login_input_two .color_bbb {
+    color: #BBBBBB;
+}
+
+.login_input_two .color_006FFF{
+    color: #006FFF;
+}
+.vcode_error {
+    position: absolute;
+    left: 72rpx;
+    top: 506rpx;
+    /*line-height: 90rpx;*/
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #F4333C;
+    letter-spacing: 0;
+}
+
+.button_word {
+    margin-top:120rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 40rpx;
+    color: #fff;
+    height: 90rpx;
+}
+
+.login {
+    border-radius: 10rpx;
+    font-family: PingFangSC-Light;
+    font-size: 32rpx;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    background-color: #DDDDDD;
+}
+
+.login_pass {
+    background-color: #1992FC;
+}
+.placeholder{
+  color: red;
+}

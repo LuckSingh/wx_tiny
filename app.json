@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/complate/complate",
+    "pages/coupon/coupon",
+    "pages/realname/realname",
+    "pages/deposit/deposit",
+    "pages/unlock/unlock",
+    "pages/using/using",
+    "pages/final/final",
+    "pages/cost/cost"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小蓝单车",
+    "navigationBarTextStyle": "black"
+  }
+}

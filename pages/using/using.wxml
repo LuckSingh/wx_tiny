@@ -1,0 +1,48 @@
+<view class="body">
+  <view class="header">
+    <view class="header_number">No.{{number}}</view>
+    <view wx:if="{{isUnlock}}" class="header_code">解锁码:{{code}}</view>
+  </view>
+  <view class="text_center">
+    <image class="time_pic" src="../../images/time.png" />
+    <view class="time">{{time}}</view>
+    <view class="time_tips">已使用(分钟)</view>
+  </view>
+  <view class="time_line"></view>
+  <view class="text_center">
+    <image class="cost_pic" src="../../images/cost.png" />
+    <view class="cost">{{cost}}</view>
+    <view class="cost_tips">当前花费(元)</view>
+    <view class="cost_button" wx:if="{{priceDesc != ''}}">
+      <view class="cost_button_word">{{priceDesc}}</view>
+    </view>
+  </view>
+  <view wx:if="{{isUnlock}}" class="finish_button">
+    <view bindtap="finish" class="finish">结束用车</view>
+  </view>
+  <view class="footer">
+    <view class="footer_text">
+      <view bindtap="service" class="service">联系人工客服</view>
+    </view>
+  </view>
+  <view wx:if="{{hideUnlock&&isUnlock}}">
+    <view class="unlock_body"></view>
+    <view class="unlock_bac">
+      <view class="unlock_title">解锁码</view>
+      <view class="unlock_tips">请操作手动开锁</view>
+      <view class="unlock">
+        <image class="unlock_border" src="../../images/unlock_border.png" />
+        <image class="unlock_border" src="../../images/unlock_border.png" />
+        <image class="unlock_border" src="../../images/unlock_border.png" />
+        <image class="unlock_border" src="../../images/unlock_border.png" />
+      </view>
+      <view class="unlock_nums">
+        <view class="unlock_num1">{{code1}}</view>
+        <view class="unlock_num1">{{code2}}</view>
+        <view class="unlock_num1">{{code3}}</view>
+        <view class="unlock_num1">{{code4}}</view>
+      </view>
+    </view>
+    <image bindtap="hideUnlock" class="unlock_del" src="../../images/close.png" />
+  </view>
+</view>
